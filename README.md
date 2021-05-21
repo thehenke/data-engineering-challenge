@@ -5,17 +5,17 @@ Seja bem vindo ao teste de Engenheiro de Dados.
 
     .
     ├── analytics                             
-    │   ├── queries.py                              # Queries feitas referente as questoes 1 a 5 requisitadas no documentos
-    │   ├── visualization.ipynb                     # Alguns gráficos para visualização de dados
+    │   ├── queries.py               # Contém as respostas das perguntas 1 a 5.
+    │   ├── visualization.ipynb      # Alguns gráficos para visualização de dados.
     ├── config
-    │   ├── dbconnection.py                         # Arquivo de configuração do banco de dados MySQL
+    │   ├── dbconnection.py          # Configuração do banco de dados MySQL.
     ├── data                                        
-    │   ├── CSV Files...                            # Todos os dados e seus respectivos arquivos CSV
+    │   ├── CSV Files...             # Todos os dados e seus respectivos arquivos CSV.
     ├── model
-    │   ├── structure.sql                           # Script contendo apenas a estrutura da modelagem de dados
+    │   ├── structure.sql            # Scripts contendo apenas a estrutura da modelagem de dados.
     │   ├── final.sql                               
     │   ├── MER.mwb                                 
-    ├── pipelines
+    ├── pipelines                    # Arquivos responsáveis pela carga de dados de cada entidade no banco de dados.
     │   ├── customer.py
     │   ├── person.py
     │   ├── product.py
@@ -36,11 +36,22 @@ Seja bem vindo ao teste de Engenheiro de Dados.
     
 ><b>pipelines -> </b> Cada arquivo dentro dessa pasta é responsável pelo carregamento dos dados da entidade referida no banco de dados destino, é nesses arquivos que são feitos os tratamento de dados também quando necessários.
 
-<h1>Infraestrutura</h1>
 <ul>
-    <li>A plataforma da nuvem escolhida foi o <b>Google Cloud Platform</b>.</li>
-    <li>A instancia criada foi na ordem de SQL > MySQL, utilizando créditos do período trial.</li>
-    <li>A infraestrutura foi configurada utilizando o script de modelagem de dados, contido na pasta /model.</li>
+    <li><b>INFRAESTRUTURA</b>
+        <ul>
+            <li>A plataforma da nuvem escolhida foi o <b>Google Cloud Platform</b>.</li>
+            <li>A instancia criada foi na ordem de SQL > MySQL, utilizando créditos do período trial.</li>
+            <li>A infraestrutura foi configurada utilizando o script de modelagem de dados, contido na pasta /model.</li>
+        </ul>
+</ul>
+
+<ul>
+    <li><b>MODELAGEM DE DADOS</b>
+        <ul>
+            <li>A modelagem foi criada no MySQL, seguindo os nomes e tipos referentes de cada campo de cada arquivo CSV.</li>
+            <li></li>
+            <li></li>
+        </ul>
 </ul>
 Person > Customer > Product > Special Offer Product > SalesOrderDetail > SalesOrderHeader
 
