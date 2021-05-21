@@ -42,16 +42,27 @@ Seja bem vindo ao teste de Engenheiro de Dados.
             <li>A plataforma da nuvem escolhida foi o <b>Google Cloud Platform</b>.</li>
             <li>A instancia criada foi na ordem de SQL > MySQL, utilizando créditos do período trial.</li>
             <li>A infraestrutura foi configurada utilizando o script de modelagem de dados, contido na pasta /model.</li>
+            <li>Escolhi usar GCP pelo fato de ter tido pouco contato anteriormente, aproveitei pra aprender mais.</li>
         </ul>
 </ul>
 
 <ul>
     <li><b>MODELAGEM DE DADOS</b>
         <ul>
-            <li>A modelagem foi criada no MySQL, seguindo os nomes e tipos referentes de cada campo de cada arquivo CSV.</li>
-            <li></li>
-            <li></li>
+            <li>A modelagem foi criada utilizando MySQL, seguindo os nomes e tipos referentes de cada campo de cada arquivo CSV.</li>
+            <li>Todo o conteúdo referente a modelagem de dados está na pasta /model</li>
         </ul>
 </ul>
-Person > Customer > Product > Special Offer Product > SalesOrderDetail > SalesOrderHeader
+
+<ul>
+    <li><b>FLUXO DE DADOS</b>
+        <ul>
+            <li>Os dados de cada entidade de cada arquivo CSV, é lida em memória, utilizando a biblioteca Pandas</li>
+            <li>Os dados carregados em memoria são transformados quando necessário, feito o tratamento de missing e missing ocultos.</li>
+            <li>Cada arquivo /py de pipeline é responsável pelo fluxo de uma entidade (csv > python > mysql). Escolhi dividir dessa forma para manter a organização e deixar de facil entendimento e manutenção do código.</li>
+            <li>Os scripts detém de uma ordem de execução, para respeitar os relacionamento entre as entidades e se relacionarem da maneira correta</li>
+            <li>Ordem de execução: person -> customer -> product -> specialOfferProduct -> salesOrderDetail -> salesOrderHeader</li>
+        </ul>
+</ul>
+
 
