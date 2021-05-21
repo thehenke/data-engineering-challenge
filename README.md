@@ -3,6 +3,7 @@
 ## Seja bem vindo ao teste de Engenheiro de Dados
 
 <h2>Estrutura do projeto</h2>
+
     .
     ├── analytics                                   # Queries feitas referente as questoes 1 a 5 requisitadas no documentos
     │   ├── queries.py                              
@@ -23,7 +24,6 @@
     │   ├── sales_order_header.py
     │   ├── sales_special_offer_product.py
     └── 
-
 
  
 Person > Customer > Product > Special Offer Product > SalesOrderDetail > SalesOrderHeader
