@@ -31,8 +31,11 @@
 
 ><b>config -> </b>representa o conteúdo de configuração para o script, seja ele banco de dados, ou outro elemento que necessite de uma configuração
 
+><b>data -> </b> está contido todos os arquivos CSV, Sales, Person, Product, sem nenhuma alteração.
                               
+><b>model -> </b> A estrutura da modelagem de dados relacional está contida nessa pasta, nos formatos SQL e .mwb (MER)                              
     
- 
+><b>pipelines -> </b> Cada arquivo dentro dessa pasta é responsável pelo carregamento dos dados da entidade referida no banco de dados destino, é nesses arquivos que são feitos os tratamento de dados também quando necessários.
+
 Person > Customer > Product > Special Offer Product > SalesOrderDetail > SalesOrderHeader
 
