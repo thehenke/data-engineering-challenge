@@ -60,14 +60,14 @@ Seja bem vindo ao teste de Engenheiro de Dados.
         <ul>
             <li>Os dados de cada entidade de cada arquivo CSV, é lida em memória, utilizando a biblioteca Pandas</li>
             <li>Os dados carregados em memoria são transformados quando necessário, feito o tratamento de missing e missing ocultos.</li>
-            <li>Cada arquivo /py de pipeline é responsável pelo fluxo de uma entidade (csv > python > mysql). Escolhi dividir dessa forma para manter a organização e deixar de facil entendimento e manutenção do código.</li>
+            <li>Cada arquivo .py de pipeline é responsável pelo fluxo de uma entidade (csv > python > mysql). Escolhi dividir dessa forma para manter a organização e deixar de facil entendimento e manutenção do código.</li>
             <ul>
                 <li><b>customer.py</b> é responsavel pelos dados de Customer (Coleta, Transformação e Carga)</li>
                 <li><b>person.py</b> é responsavel pelos dados de Person (Coleta, Transformação e Carga)</li>
                 <li><b>product.py</b> é responsavel pelos dados de Product (Coleta, Transformação e Carga)</li>
                 <li><b>sales_order_detail.py</b> é responsavel pelos dados de SalesOrderDetail (Coleta, Transformação e Carga)</li>
                 <li><b>sales_special_offer_product.py</b> é responsavel pelos dados de SalesSpecialOfferProduct (Coleta, Transformação e Carga)</li>
-                <li><b>sales_order_Header.py</b> é responsavel pelos dados de SalesOrderHeader (Coleta, Transformação e Carga)</li>
+                <li><b>sales_order_header.py</b> é responsavel pelos dados de SalesOrderHeader (Coleta, Transformação e Carga)</li>
             </ul>
             <li>Os scripts detém de uma ordem de execução, para respeitar os relacionamento entre as entidades e se relacionarem da maneira correta</li>
             <li>Ordem de execução: person -> customer -> product -> specialOfferProduct -> salesOrderDetail -> salesOrderHeader</li>
@@ -82,3 +82,4 @@ Seja bem vindo ao teste de Engenheiro de Dados.
         </ul>
 </ul>
 
+<h2>E se? No futuro?</h2>
