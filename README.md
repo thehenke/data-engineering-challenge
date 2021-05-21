@@ -86,6 +86,10 @@ Seja bem vindo ao teste de Engenheiro de Dados.
 <h2>E se? No futuro?</h2>
 
 > Utilizaria um framework para o ETL, Pentaho, ou coisa do tipo.
+
 > Se a quantidade de dados for maior, seria necessário utilizar uma solução mais robusta, processamento em paralelo para fazer o fluxo (Spark por exemplo)
+
 > Orquestra de agendamento para automação agendada desse fluxo (Airflow)
+
 > Se os dados forem utilizados para análise exploratória, machine learning, e modelagem preditiva no geral, eu faria uma modelagem de dados diferente, assim como o tratamento de dados missing e pré processamento.
+
