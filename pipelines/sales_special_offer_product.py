@@ -1,25 +1,19 @@
-import sys
-sys.path.append('C:/Users/gabri/Desktop/FATEC/6/data-engineering-challenge')
+def load_specialOfferProduct():
+    import pandas as pd
+    from config.dbconnection import mysql
 
-import pandas as pd
-from config.dbconnection import mysql
+    df = pd.read_csv('data/Sales.SpecialOfferProduct.csv', delimiter = ';', keep_default_na = False)
 
+    cursor = mysql.cursor()
 
-df = pd.read_csv('data/Sales.SpecialOfferProduct.csv', delimiter = ';', keep_default_na = False)
+    sql = """ 
+        INSERT INTO specialofferproduct (SpecialOfferID, ProductID, rowguid, ModifiedDate) VALUES (%s, %s, %s, %s);
+    """
 
-cursor = mysql.cursor()
+    for index, row in df.iterrows():
+        cursor.execute(sql, tuple(row))
 
-sql = """ 
-INSERT INTO specialofferproduct (SpecialOfferID, ProductID, rowguid, ModifiedDate) VALUES (%s, %s, %s, %s);
-"""
+    mysql.commit()
 
-for index, row in df.iterrows():
-    val =(
-            row['SpecialOfferID'],
-            row['ProductID'],
-            row['rowguid'],
-            row['ModifiedDate']
-        )
-    cursor.execute(sql, tuple(row))
-
-mysql.commit()
+    print('SpecialOfferProduct OK')
+    return None
