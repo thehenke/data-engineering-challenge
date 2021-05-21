@@ -60,6 +60,7 @@ Seja bem vindo ao teste de Engenheiro de Dados.
         <ul>
             <li>Os dados de cada entidade de cada arquivo CSV, é lida em memória, utilizando a biblioteca Pandas</li>
             <li>Os dados carregados em memoria são transformados quando necessário, feito o tratamento de missing e missing ocultos.</li>
+            <li>Todo o fluxo é implementado utilizando a Linguagem Python e suas bibliotecas padroes</li>
             <li>Cada arquivo .py de pipeline é responsável pelo fluxo de uma entidade (csv > python > mysql). Escolhi dividir dessa forma para manter a organização e deixar de facil entendimento e manutenção do código.</li>
             <ul>
                 <li><b>customer.py</b> é responsavel pelos dados de Customer (Coleta, Transformação e Carga)</li>
@@ -83,6 +84,8 @@ Seja bem vindo ao teste de Engenheiro de Dados.
 </ul>
 
 <h2>E se? No futuro?</h2>
->Se os dados forem maiores, seria necessário utilizar uma solução mais robusta, processamento em paralelo para fazer o fluxo (Spark por exemplo)
->Orquestra de agendamento para automação agendada desse fluxo (Airflow)
->Se os dados forem utilizados para análise exploratória, machine learning, e modelagem preditiva no geral, eu faria uma modelagem de dados diferente, assim como o tratamento de dados missing e pré processamento.
+
+> Utilizaria um framework para o ETL, Pentaho, ou coisa do tipo.
+> Se a quantidade de dados for maior, seria necessário utilizar uma solução mais robusta, processamento em paralelo para fazer o fluxo (Spark por exemplo)
+> Orquestra de agendamento para automação agendada desse fluxo (Airflow)
+> Se os dados forem utilizados para análise exploratória, machine learning, e modelagem preditiva no geral, eu faria uma modelagem de dados diferente, assim como o tratamento de dados missing e pré processamento.
