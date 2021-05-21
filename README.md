@@ -51,6 +51,7 @@ Seja bem vindo ao teste de Engenheiro de Dados.
         <ul>
             <li>A modelagem foi criada utilizando MySQL, seguindo os nomes e tipos referentes de cada campo de cada arquivo CSV.</li>
             <li>Todo o conteúdo referente a modelagem de dados está na pasta /model</li>
+            <img src="/model/MER.png" alt="MER" style="height: 100px; width:100px;"/>
         </ul>
 </ul>
 
@@ -65,4 +66,11 @@ Seja bem vindo ao teste de Engenheiro de Dados.
         </ul>
 </ul>
 
+<ul>
+    <li><b>ANÁLISE DE DADOS</b>
+        <ul>
+            <li>As queries de SELECT estão no arquivo analytics/queries.py, da pergunta 1 a 5, cada uma respondida em uma função</li>
+            <li></li>
+        </ul>
+</ul>
 
