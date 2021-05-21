@@ -14,8 +14,8 @@
     │   ├── CSV Files...                            # Todos os dados e seus respectivos arquivos CSV
     ├── model
     │   ├── structure.sql                           # Script contendo apenas a estrutura da modelagem de dados
-    │   ├── final.sql                               # Script contendo a estrutura e o nome do banco de dados criado
-    │   ├── MER.mwb                                 # Modelo Entidade Relacionamento da 
+    │   ├── final.sql                               
+    │   ├── MER.mwb                                 
     ├── pipelines
     │   ├── customer.py
     │   ├── person.py
@@ -25,6 +25,13 @@
     │   ├── sales_special_offer_product.py
     └── 
 
+<h3>Considerações sobre a estrutura</h3>
+    <ul>
+        <li><b>analytics -> </b> representa todo o conteúdo que se trata do fim, queries feitas em cima do banco de dados final carregado, e a visualização utilizando Jupyter Notebook e Matplotlib</li>
+        <li><b>config -> </b>representa o conteúdo de configuração para o script, seja ele banco de dados, ou outro elemento que necessite de uma configuração</li>
+        <li></li>
+        <li></li>                                
+    </ul>
  
 Person > Customer > Product > Special Offer Product > SalesOrderDetail > SalesOrderHeader
 
