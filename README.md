@@ -1,6 +1,5 @@
 # Desafio de Engenharia de Dados
-
-## Seja bem vindo ao teste de Engenheiro de Dados
+Seja bem vindo ao teste de Engenheiro de Dados.
 
 <h1>Estrutura do projeto</h1>
 
@@ -37,5 +36,11 @@
     
 ><b>pipelines -> </b> Cada arquivo dentro dessa pasta é responsável pelo carregamento dos dados da entidade referida no banco de dados destino, é nesses arquivos que são feitos os tratamento de dados também quando necessários.
 
+<h1>Infraestrutura</h1>
+<ul>
+    <li>A plataforma da nuvem escolhida foi o <b>Google Cloud Platform</b>.</li>
+    <li>A instancia criada foi na ordem de SQL > MySQL, utilizando créditos do período trial.</li>
+    <li>A infraestrutura foi configurada utilizando o script de modelagem de dados, contido na pasta /model.</li>
+</ul>
 Person > Customer > Product > Special Offer Product > SalesOrderDetail > SalesOrderHeader
 
