@@ -26,12 +26,12 @@
     └── 
 
 <h3>Considerações sobre a estrutura</h3>
-    <ul>
-        <li><b>analytics -> </b> representa todo o conteúdo que se trata do fim, queries feitas em cima do banco de dados final carregado, e a visualização utilizando Jupyter Notebook e Matplotlib</li>
-        <li><b>config -> </b>representa o conteúdo de configuração para o script, seja ele banco de dados, ou outro elemento que necessite de uma configuração</li>
-        <li></li>
-        <li></li>                                
-    </ul>
+    
+><b>analytics -> </b> representa todo o conteúdo que se trata do fim, queries feitas em cima do banco de dados final carregado, e a visualização utilizando Jupyter Notebook e Matplotlib
+><b>config -> </b>representa o conteúdo de configuração para o script, seja ele banco de dados, ou outro elemento que necessite de uma configuração
+
+                              
+    
  
 Person > Customer > Product > Special Offer Product > SalesOrderDetail > SalesOrderHeader
 
