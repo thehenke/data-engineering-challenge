@@ -25,6 +25,8 @@ Seja bem vindo ao teste de Engenheiro de Dados.
     └── 
 
 <h3>Considerações sobre a estrutura</h3>
+
+> A estrutura foi pensada a partir dos padroes arquiteturais e boas práticas da famosa Engenharia de Software.
     
 ><b>analytics -> </b> representa todo o conteúdo que se trata do fim, queries feitas em cima do banco de dados final carregado, e a visualização utilizando Jupyter Notebook e Matplotlib
 
@@ -43,6 +45,7 @@ Seja bem vindo ao teste de Engenheiro de Dados.
             <li>A instancia criada foi na ordem de SQL > MySQL, utilizando créditos do período trial.</li>
             <li>A infraestrutura foi configurada utilizando o script de modelagem de dados, contido na pasta /model.</li>
             <li>Escolhi usar GCP pelo fato de ter tido pouco contato anteriormente, aproveitei pra aprender mais.</li>
+            <img src="/model/gcp.png" alt="MER" style="height: 80px; width:80px;"/>
         </ul>
 </ul>
 
@@ -80,16 +83,21 @@ Seja bem vindo ao teste de Engenheiro de Dados.
         <ul>
             <li>As queries de SELECT estão no arquivo analytics/queries.py, da pergunta 1 a 5, cada uma respondida em uma função</li>
             <li>Alguns plots realizado com os dados extraidos do banco de dados estão no Notebook visualization.ipynb</li>
+            <img src="/analytics/top_10_products.png" alt="MER" style="height: 60px; width:120px;"/>
         </ul>
 </ul>
 
-<h2>E se? No futuro?</h2>
+<h2>E no futuro?</h2>
 
-> Utilizaria um framework para o ETL, Pentaho, ou coisa do tipo.
+> Aprenderia Apache Spark, pra solucionar o problema a partir de uma solução mais robusta.
 
-> Se a quantidade de dados for maior, seria necessário utilizar uma solução mais robusta, processamento em paralelo para fazer o fluxo (Spark por exemplo)
+> Poderia utilizar um framework para o ETL, Pentaho, serviços da AWS, Azure. No qual o processo seria mais rápido e automatico se tornando incremental de maneira fácil.
 
-> Orquestra de agendamento para automação agendada desse fluxo (Airflow)
+> Real Time Analytics, permitindo até criar modelagens no próprio fluxo de tratamento da informação pra ajudar na tomada de decisao, mas tudo depende do problema a ser resolvido.
 
-> Se os dados forem utilizados para análise exploratória, machine learning, e modelagem preditiva no geral, eu faria uma modelagem de dados diferente, assim como o tratamento de dados missing e pré processamento.
+> Utilizaria um orquestrador de agendamento para automação agendada desse fluxo (Airflow)
+
+> Se os dados forem utilizados para análise exploratória, machine learning, e modelagem preditiva no geral, eu faria uma modelagem de dados diferente, assim como o tratamento de dados missing e pré processamento. (Orientado ao problema).
+
+<h2>Obrigado!</h2>
 

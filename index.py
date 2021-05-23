@@ -9,7 +9,7 @@ from pipelines.sales_order_detail import load_salesOrderDetail
 from pipelines.sales_order_header import load_salesOrderHeader
 
 def main():
-    load_person()
+    # load_person()
     load_customer()
     load_product()
     load_specialOfferProduct()

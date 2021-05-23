@@ -1,5 +1,6 @@
 
 def load_person():
+    
     import pandas as pd
     from config.dbconnection import mysql
 
@@ -21,9 +22,10 @@ def load_person():
     ModifiedDate)
     VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)'''
 
+    print('Starting Person')
     for index, row in df.iterrows():
         cursor.execute(sql, tuple(row))
-
+    print('For Done')
     mysql.commit()
     print('Person OK')
     return None
